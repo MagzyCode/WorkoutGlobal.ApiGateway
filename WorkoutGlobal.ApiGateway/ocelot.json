@@ -40,7 +40,7 @@
       "FileCacheOptions": { "TtlSeconds": 60 }
     },
     {
-      "DownstreamPathTemplate": "api/userCredentials",
+      "DownstreamPathTemplate": "/api/userCredentials",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -53,7 +53,7 @@
       "FileCacheOptions": { "TtlSeconds": 60 }
     },
     {
-      "DownstreamPathTemplate": "api/userCredentials/{id}/roles",
+      "DownstreamPathTemplate": "/api/userCredentials/{id}/roles",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -66,7 +66,7 @@
       "FileCacheOptions": { "TtlSeconds": 60 }
     },
     {
-      "DownstreamPathTemplate": "api/userCredentials/{id}/account",
+      "DownstreamPathTemplate": "/api/userCredentials/{id}/account",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -79,7 +79,7 @@
       "FileCacheOptions": { "TtlSeconds": 60 }
     },
     {
-      "DownstreamPathTemplate": "api/videos/{id}",
+      "DownstreamPathTemplate": "/api/videos/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -92,7 +92,7 @@
       "FileCacheOptions": { "TtlSeconds": 60 }
     },
     {
-      "DownstreamPathTemplate": "api/videos",
+      "DownstreamPathTemplate": "/api/videos",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -105,7 +105,7 @@
       "FileCacheOptions": { "TtlSeconds": 60 }
     },
     {
-      "DownstreamPathTemplate": "api/videos",
+      "DownstreamPathTemplate": "/api/videos",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -118,7 +118,7 @@
       "FileCacheOptions": { "TtlSeconds": 60 }
     },
     {
-      "DownstreamPathTemplate": "api/videos/{id}",
+      "DownstreamPathTemplate": "/api/videos/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -131,7 +131,7 @@
       "FileCacheOptions": { "TtlSeconds": 60 }
     },
     {
-      "DownstreamPathTemplate": "api/videos/{id}",
+      "DownstreamPathTemplate": "/api/videos/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -144,7 +144,7 @@
       "FileCacheOptions": { "TtlSeconds": 60 }
     },
     {
-      "DownstreamPathTemplate": "api/courses/{id}",
+      "DownstreamPathTemplate": "/api/courses/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -157,12 +157,12 @@
       "FileCacheOptions": { "TtlSeconds": 60 }
     },
     {
-      "DownstreamPathTemplate": "api/courses",
-      "DownstreamScheme": "http",
+      "DownstreamPathTemplate": "/api/courses",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": 5047
+          "Port": 7047
         }
       ],
       "UpstreamPathTemplate": "/courses",
@@ -170,7 +170,7 @@
       "FileCacheOptions": { "TtlSeconds": 60 }
     },
     {
-      "DownstreamPathTemplate": "api/courses",
+      "DownstreamPathTemplate": "/api/courses",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -183,7 +183,7 @@
       "FileCacheOptions": { "TtlSeconds": 60 }
     },
     {
-      "DownstreamPathTemplate": "api/courses/{id}",
+      "DownstreamPathTemplate": "/api/courses/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -196,7 +196,7 @@
       "FileCacheOptions": { "TtlSeconds": 60 }
     },
     {
-      "DownstreamPathTemplate": "api/courses/{id}",
+      "DownstreamPathTemplate": "/api/courses/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -209,7 +209,7 @@
       "FileCacheOptions": { "TtlSeconds": 60 }
     },
     {
-      "DownstreamPathTemplate": "api/courses/{id}/lessons",
+      "DownstreamPathTemplate": "/api/courses/{id}/lessons",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -222,7 +222,7 @@
       "FileCacheOptions": { "TtlSeconds": 60 }
     },
     {
-      "DownstreamPathTemplate": "api/lessons/{id}",
+      "DownstreamPathTemplate": "/api/lessons/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -235,7 +235,7 @@
       "FileCacheOptions": { "TtlSeconds": 60 }
     },
     {
-      "DownstreamPathTemplate": "api/lessons",
+      "DownstreamPathTemplate": "/api/lessons",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -248,7 +248,7 @@
       "FileCacheOptions": { "TtlSeconds": 60 }
     },
     {
-      "DownstreamPathTemplate": "api/lessons",
+      "DownstreamPathTemplate": "/api/lessons",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -261,7 +261,7 @@
       "FileCacheOptions": { "TtlSeconds": 60 }
     },
     {
-      "DownstreamPathTemplate": "api/lessons/{id}",
+      "DownstreamPathTemplate": "/api/lessons/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -274,7 +274,7 @@
       "FileCacheOptions": { "TtlSeconds": 60 }
     },
     {
-      "DownstreamPathTemplate": "api/lessons/{id}",
+      "DownstreamPathTemplate": "/api/lessons/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -287,7 +287,7 @@
       "FileCacheOptions": { "TtlSeconds": 60 }
     },
     {
-      "DownstreamPathTemplate": "api/lessons/{id}/course",
+      "DownstreamPathTemplate": "/api/lessons/{id}/course",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {

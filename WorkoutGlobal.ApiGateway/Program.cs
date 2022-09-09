@@ -3,17 +3,23 @@ using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Configuration.AddJsonFile(
-    path: builder.Configuration["OcelotConfiguration"]);
+builder.Configuration
+    .SetBasePath(builder.Environment.ContentRootPath)
+    .AddJsonFile(builder.Configuration["OcelotConfiguration"])
+    .AddEnvironmentVariables();
 
-var ocelotConfiguration = new ConfigurationBuilder()
-                            .AddJsonFile(builder.Configuration["OcelotConfiguration"])
-                            .Build();
-
-builder.Services.AddOcelot(ocelotConfiguration)
+builder.Services.AddOcelot(builder.Configuration)
     .AddCacheManager(settings => settings.WithDictionaryHandle());
 
 var app = builder.Build();
 
+app.UseRouting();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+});
+await app.UseOcelot();
+
 app.Run();
-app.UseOcelot();
+
+
